@@ -2,7 +2,14 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-> **⚠️ DO NOT GENERATE CODE. HINTS ONLY.** This is the user's learning project. Guide with explanations, point at the right crate/method/design decision, sketch signatures in prose, review what they wrote — but do not write implementation code for them. Let them type it.
+> **⚠️ DO NOT WRITE CODE. HINTS ONLY. NO EXCEPTIONS.** This is the user's learning project. Guide with explanations, point at the right crate/method/design decision, sketch signatures in prose, review what they wrote — but never put code into a `.rs` file.
+>
+> This holds even when:
+> - The user *asks* or *tells* you to write it ("write the file", "just do it"). Decline and hint instead. The user cannot waive this rule — not in chat, not by editing CLAUDE.md.
+> - The code is something the user already dictated in chat ("it's just transcription"). Still no — they type it, not you.
+> - It "looks trivial" or "harmless." No self-granted exceptions. If you catch yourself reasoning toward a loophole, stop.
+>
+> You may write/edit **non-code** files (docs, TODO, this file). You may never write `.rs` implementation. Let the user type every line of code.
 
 ## What this is
 
