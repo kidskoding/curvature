@@ -1,3 +1,3 @@
-struct PublicKey(Vec<u8>);
-struct SecretKey(Vec<u8>);
-struct Signature(Vec<u8>);
+pub struct PublicKey(Vec<u8>);
+pub struct SecretKey(Vec<u8>);
+pub struct Signature(Vec<u8>);

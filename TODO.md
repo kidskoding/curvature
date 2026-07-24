@@ -8,7 +8,7 @@ Ordered so there's a runnable binary early. Check off tasks individually. Build 
 
 - [x] Add deps: `ed25519-dalek` (enable `batch`), `rand`, `color-eyre`. Hold off on ratatui until the table renders as plain text.
 - [x] Define opaque newtypes: `SecretKey(Vec<u8>)`, `PublicKey(Vec<u8>)`, `Signature(Vec<u8>)`.
-- [ ] Define the `Scheme` trait: `keygen`, `sign`, `verify`, `batch_verify` (default = loop verify), `aggregate → Option`, `verify_aggregate → Option`, `pk_len`, `sig_len`, plus a `name`.
+- [x] Define the `Scheme` trait: `keygen`, `sign`, `verify`, `batch_verify` (default = loop verify), `aggregate → Option`, `verify_aggregate → Option`, `pk_len`, `sig_len`, plus a `name`.
 - [ ] Implement `Scheme` for Ed25519 — downcast the `Vec<u8>` newtypes to dalek types internally.
 - [ ] Sign/verify roundtrip test for Ed25519 (`cargo test`).
 - [ ] Print the comparison table to stdout for a `Vec<Box<dyn Scheme>>` holding just Ed25519. This is the "it runs" checkpoint.
