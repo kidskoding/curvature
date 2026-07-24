@@ -1,0 +1,9 @@
+[package]
+name = "curvature"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+color-eyre = "0.6.5"
+ed25519-dalek = { version = "3.0.0", features = ["batch"] }
+rand = "0.10.2"
